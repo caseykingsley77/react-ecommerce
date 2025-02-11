@@ -36,6 +36,7 @@ const Checkout = () => {
     actions.setTouched({});
   };
 
+  // Handles payment from stripe
   async function makePayment(values) {
     const stripe = await stripePromise;
     const requestBody = {
